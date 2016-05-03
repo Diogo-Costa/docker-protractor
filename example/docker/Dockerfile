@@ -12,23 +12,21 @@ RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | te
 RUN echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
 RUN apt-get update && apt-get install oracle-java8-installer -yy
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install NodeJS and NPM
 RUN wget -qO- https://deb.nodesource.com/setup_4.x | bash -
 RUN apt-get install -yy nodejs --fix-missing
 
+# Clean Install
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 # Install Protractor
 RUN npm install -g protractor
-RUN webdriver-manager update
-
-# Iniciando o SeleniumWebServer
-CMD webdriver-manager start
 
 # The ENTRYPOINT allows you to configure a container that will run as an executable.
 # Creating the mirror volume of your code in the container.
 ENTRYPOINT ["protractor","automated/src/e2e/conf.js"]
 
-# Creating variables to be received "Ex: --client --build test"
+# Creating variables to be received "Ex: --sauceUser --sauceKey"
 CMD ["$1 $2"]
 
