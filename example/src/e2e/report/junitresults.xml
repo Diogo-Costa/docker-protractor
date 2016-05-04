@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="Blog Home" errors="0" tests="1" failures="0" time="3.061" timestamp="2016-05-03T18:22:49">
+  <testcase classname="Blog Home" name="Validating the home page" time="3.058"></testcase>
+</testsuite>
+</testsuites>
