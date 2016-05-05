@@ -33,6 +33,6 @@ And the file `conf.js` have to be in the structure below:<br />
 ---conf.js<br />
 
 ###  Running Image ###
-In order to run tests of an CI system, run the following command:<br />
+In order to run tests on a CI system, run the following command:<br />
 `docker run --rm -v <location test project>:/automated diogocosta/protractor-saucelabs --sauceUser --sauceKey`
 
