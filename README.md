@@ -19,12 +19,13 @@ Or run the command to pull the container in your environment with Docker Install
 ### Structure ###
 To use the image should be added to the 'conf.js' the following variables sauceUser and sauceKey:<br />
 Ex.:
-    <code>var userSauce = process.argv[3].substr(2);
-    var keySauce = process.argv[4].substr(2);
-    exports.config = {
-        sauceUser: userSauce,
-        sauceKey: keySauce,
+    <code>var userSauce = process.argv[3].substr(2);<br />
+    var keySauce = process.argv[4].substr(2);<br />
+    exports.config = {<br />
+        sauceUser: userSauce,<br />
+        sauceKey: keySauce,<br />
     //To be continued ...</code>
+<br />
 <br />
 And the file `conf.js` have to be in the structure below:<br />
 -src<br />
