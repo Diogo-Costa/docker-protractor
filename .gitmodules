@@ -1,3 +1,3 @@
 [submodule "meteorApp"]
-	path = meteorApp
+	path = src/e2e/meteorApp
 	url = https://github.com/Diogo-Costa/meteorApp
