@@ -1,5 +1,6 @@
 # Protractor running on SauceLabs #
 
+<a href="https://microbadger.com/images/diogocosta/protractor-saucelabs" title="Get your own image badge on microbadger.com"><img src="https://images.microbadger.com/badges/image/diogocosta/protractor-saucelabs.svg"></a>
 
 <a href="https://microbadger.com/images/diogocosta/protractor-saucelabs" title="Get your own version badge on microbadger.com"><img src="https://images.microbadger.com/badges/version/diogocosta/protractor-saucelabs.svg"></a>
 
