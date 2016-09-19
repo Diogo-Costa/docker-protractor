@@ -1,5 +1,7 @@
 # Protractor running on SauceLabs #
 
+[![](https://images.microbadger.com/badges/image/diogocosta/protractor-saucelabs.svg)](https://microbadger.com/images/diogocosta/protractor-saucelabs "Get your own image badge on microbadger.com")
+
 This image contains a fully configured environment to run tests using Protractor and SauceLabs.
 
 ## Docker Image ##
